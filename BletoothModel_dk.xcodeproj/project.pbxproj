@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		191A3AC223288406004ABFF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191A3AC123288406004ABFF0 /* AppDelegate.swift */; };
+		191A3AC423288406004ABFF0 /* BLEMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191A3AC323288406004ABFF0 /* BLEMainViewController.swift */; };
+		191A3AC723288406004ABFF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 191A3AC523288406004ABFF0 /* Main.storyboard */; };
+		191A3ACA23288406004ABFF0 /* BletoothModel_dk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 191A3AC823288406004ABFF0 /* BletoothModel_dk.xcdatamodeld */; };
+		191A3ACC23288408004ABFF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 191A3ACB23288408004ABFF0 /* Assets.xcassets */; };
+		191A3ACF23288408004ABFF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 191A3ACD23288408004ABFF0 /* LaunchScreen.storyboard */; };
+		191A3ADB2328846E004ABFF0 /* DKBleNfcDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 191A3ADA2328846E004ABFF0 /* DKBleNfcDevice.m */; };
+		191A3AF2232884D1004ABFF0 /* Mifare.m in Sources */ = {isa = PBXBuildFile; fileRef = 191A3AE3232884D1004ABFF0 /* Mifare.m */; };
+		191A3AF3232884D1004ABFF0 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 191A3AE4232884D1004ABFF0 /* Card.m */; };
+		191A3AF4232884D1004ABFF0 /* Iso15693Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 191A3AE6232884D1004ABFF0 /* Iso15693Card.m */; };
+		191A3AF5232884D1004ABFF0 /* CpuCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 191A3AE7232884D1004ABFF0 /* CpuCard.m */; };
+		191A3AF6232884D1004ABFF0 /* Ntag21x.m in Sources */ = {isa = PBXBuildFile; fileRef = 191A3AE8232884D1004ABFF0 /* Ntag21x.m */; };
+		191A3AF7232884D1004ABFF0 /* FeliCa.m in Sources */ = {isa = PBXBuildFile; fileRef = 191A3AE9232884D1004ABFF0 /* FeliCa.m */; };
+		191A3AF8232884D1004ABFF0 /* Iso14443bCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 191A3AEB232884D1004ABFF0 /* Iso14443bCard.m */; };
+		191A3AF9232884D1004ABFF0 /* Ultralight.m in Sources */ = {isa = PBXBuildFile; fileRef = 191A3AEE232884D1004ABFF0 /* Ultralight.m */; };
+		191A3AFA232884D1004ABFF0 /* DESFire.m in Sources */ = {isa = PBXBuildFile; fileRef = 191A3AEF232884D1004ABFF0 /* DESFire.m */; };
+		191A3B012328857E004ABFF0 /* DKBleDevInitInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 191A3AFB2328857E004ABFF0 /* DKBleDevInitInfo.m */; };
+		191A3B022328857E004ABFF0 /* DKComByteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 191A3AFD2328857E004ABFF0 /* DKComByteManager.m */; };
+		191A3B032328857E004ABFF0 /* DKDeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 191A3AFE2328857E004ABFF0 /* DKDeviceManager.m */; };
+		191A3B07232885AA004ABFF0 /* DKBleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 191A3B06232885AA004ABFF0 /* DKBleManager.m */; };
+		191A3B0A232885B4004ABFF0 /* NSData+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 191A3B09232885B4004ABFF0 /* NSData+Hex.m */; };
+		191A3B0F232885C2004ABFF0 /* DKDeviceNoResponseException.m in Sources */ = {isa = PBXBuildFile; fileRef = 191A3B0B232885C1004ABFF0 /* DKDeviceNoResponseException.m */; };
+		191A3B10232885C2004ABFF0 /* DKCardNoResponseException.m in Sources */ = {isa = PBXBuildFile; fileRef = 191A3B0E232885C2004ABFF0 /* DKCardNoResponseException.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		191A3ABE23288406004ABFF0 /* BletoothModel_dk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BletoothModel_dk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		191A3AC123288406004ABFF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		191A3AC323288406004ABFF0 /* BLEMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEMainViewController.swift; sourceTree = "<group>"; };
+		191A3AC623288406004ABFF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		191A3AC923288406004ABFF0 /* BletoothModel_dk.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BletoothModel_dk.xcdatamodel; sourceTree = "<group>"; };
+		191A3ACB23288408004ABFF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		191A3ACE23288408004ABFF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		191A3AD023288408004ABFF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		191A3AD72328846E004ABFF0 /* BletoothModel_dk-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BletoothModel_dk-Bridging-Header.h"; sourceTree = "<group>"; };
+		191A3AD82328846E004ABFF0 /* DKBleNfc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKBleNfc.h; sourceTree = "<group>"; };
+		191A3AD92328846E004ABFF0 /* DKBleNfcDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKBleNfcDevice.h; sourceTree = "<group>"; };
+		191A3ADA2328846E004ABFF0 /* DKBleNfcDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKBleNfcDevice.m; sourceTree = "<group>"; };
+		191A3AE0232884D1004ABFF0 /* Iso15693Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Iso15693Card.h; sourceTree = "<group>"; };
+		191A3AE1232884D1004ABFF0 /* Ultralight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ultralight.h; sourceTree = "<group>"; };
+		191A3AE2232884D1004ABFF0 /* Iso14443bCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Iso14443bCard.h; sourceTree = "<group>"; };
+		191A3AE3232884D1004ABFF0 /* Mifare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mifare.m; sourceTree = "<group>"; };
+		191A3AE4232884D1004ABFF0 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		191A3AE5232884D1004ABFF0 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		191A3AE6232884D1004ABFF0 /* Iso15693Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Iso15693Card.m; sourceTree = "<group>"; };
+		191A3AE7232884D1004ABFF0 /* CpuCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpuCard.m; sourceTree = "<group>"; };
+		191A3AE8232884D1004ABFF0 /* Ntag21x.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ntag21x.m; sourceTree = "<group>"; };
+		191A3AE9232884D1004ABFF0 /* FeliCa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeliCa.m; sourceTree = "<group>"; };
+		191A3AEA232884D1004ABFF0 /* CpuCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpuCard.h; sourceTree = "<group>"; };
+		191A3AEB232884D1004ABFF0 /* Iso14443bCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Iso14443bCard.m; sourceTree = "<group>"; };
+		191A3AEC232884D1004ABFF0 /* FeliCa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeliCa.h; sourceTree = "<group>"; };
+		191A3AED232884D1004ABFF0 /* Ntag21x.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ntag21x.h; sourceTree = "<group>"; };
+		191A3AEE232884D1004ABFF0 /* Ultralight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ultralight.m; sourceTree = "<group>"; };
+		191A3AEF232884D1004ABFF0 /* DESFire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DESFire.m; sourceTree = "<group>"; };
+		191A3AF0232884D1004ABFF0 /* DESFire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DESFire.h; sourceTree = "<group>"; };
+		191A3AF1232884D1004ABFF0 /* Mifare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mifare.h; sourceTree = "<group>"; };
+		191A3AFB2328857E004ABFF0 /* DKBleDevInitInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKBleDevInitInfo.m; sourceTree = "<group>"; };
+		191A3AFC2328857E004ABFF0 /* DKComByteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKComByteManager.h; sourceTree = "<group>"; };
+		191A3AFD2328857E004ABFF0 /* DKComByteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKComByteManager.m; sourceTree = "<group>"; };
+		191A3AFE2328857E004ABFF0 /* DKDeviceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKDeviceManager.m; sourceTree = "<group>"; };
+		191A3AFF2328857E004ABFF0 /* DKDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKDeviceManager.h; sourceTree = "<group>"; };
+		191A3B002328857E004ABFF0 /* DKBleDevInitInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKBleDevInitInfo.h; sourceTree = "<group>"; };
+		191A3B05232885AA004ABFF0 /* DKBleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKBleManager.h; sourceTree = "<group>"; };
+		191A3B06232885AA004ABFF0 /* DKBleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKBleManager.m; sourceTree = "<group>"; };
+		191A3B08232885B4004ABFF0 /* NSData+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Hex.h"; sourceTree = "<group>"; };
+		191A3B09232885B4004ABFF0 /* NSData+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Hex.m"; sourceTree = "<group>"; };
+		191A3B0B232885C1004ABFF0 /* DKDeviceNoResponseException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKDeviceNoResponseException.m; sourceTree = "<group>"; };
+		191A3B0C232885C2004ABFF0 /* DKDeviceNoResponseException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKDeviceNoResponseException.h; sourceTree = "<group>"; };
+		191A3B0D232885C2004ABFF0 /* DKCardNoResponseException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKCardNoResponseException.h; sourceTree = "<group>"; };
+		191A3B0E232885C2004ABFF0 /* DKCardNoResponseException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKCardNoResponseException.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		191A3ABB23288406004ABFF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		191A3AB523288406004ABFF0 = {
+			isa = PBXGroup;
+			children = (
+				191A3AD623288425004ABFF0 /* BlleNfcSDK */,
+				191A3AC023288406004ABFF0 /* BletoothModel_dk */,
+				191A3ABF23288406004ABFF0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		191A3ABF23288406004ABFF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				191A3ABE23288406004ABFF0 /* BletoothModel_dk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		191A3AC023288406004ABFF0 /* BletoothModel_dk */ = {
+			isa = PBXGroup;
+			children = (
+				191A3AC123288406004ABFF0 /* AppDelegate.swift */,
+				191A3AC323288406004ABFF0 /* BLEMainViewController.swift */,
+				191A3AC523288406004ABFF0 /* Main.storyboard */,
+				191A3ACB23288408004ABFF0 /* Assets.xcassets */,
+				191A3ACD23288408004ABFF0 /* LaunchScreen.storyboard */,
+				191A3AD023288408004ABFF0 /* Info.plist */,
+				191A3AC823288406004ABFF0 /* BletoothModel_dk.xcdatamodeld */,
+			);
+			path = BletoothModel_dk;
+			sourceTree = "<group>";
+		};
+		191A3AD623288425004ABFF0 /* BlleNfcSDK */ = {
+			isa = PBXGroup;
+			children = (
+				191A3ADF232884BD004ABFF0 /* Exception */,
+				191A3ADE232884AA004ABFF0 /* Tool */,
+				191A3B042328858E004ABFF0 /* BleManager */,
+				191A3ADD2328849D004ABFF0 /* DeviceManager */,
+				191A3ADC23288492004ABFF0 /* card */,
+				191A3AD82328846E004ABFF0 /* DKBleNfc.h */,
+				191A3AD92328846E004ABFF0 /* DKBleNfcDevice.h */,
+				191A3ADA2328846E004ABFF0 /* DKBleNfcDevice.m */,
+				191A3AD72328846E004ABFF0 /* BletoothModel_dk-Bridging-Header.h */,
+			);
+			path = BlleNfcSDK;
+			sourceTree = "<group>";
+		};
+		191A3ADC23288492004ABFF0 /* card */ = {
+			isa = PBXGroup;
+			children = (
+				191A3AE5232884D1004ABFF0 /* Card.h */,
+				191A3AE4232884D1004ABFF0 /* Card.m */,
+				191A3AEA232884D1004ABFF0 /* CpuCard.h */,
+				191A3AE7232884D1004ABFF0 /* CpuCard.m */,
+				191A3AE1232884D1004ABFF0 /* Ultralight.h */,
+				191A3AEE232884D1004ABFF0 /* Ultralight.m */,
+				191A3AED232884D1004ABFF0 /* Ntag21x.h */,
+				191A3AE8232884D1004ABFF0 /* Ntag21x.m */,
+				191A3AF1232884D1004ABFF0 /* Mifare.h */,
+				191A3AE3232884D1004ABFF0 /* Mifare.m */,
+				191A3AE2232884D1004ABFF0 /* Iso14443bCard.h */,
+				191A3AEB232884D1004ABFF0 /* Iso14443bCard.m */,
+				191A3AEC232884D1004ABFF0 /* FeliCa.h */,
+				191A3AE9232884D1004ABFF0 /* FeliCa.m */,
+				191A3AF0232884D1004ABFF0 /* DESFire.h */,
+				191A3AEF232884D1004ABFF0 /* DESFire.m */,
+				191A3AE0232884D1004ABFF0 /* Iso15693Card.h */,
+				191A3AE6232884D1004ABFF0 /* Iso15693Card.m */,
+			);
+			path = card;
+			sourceTree = "<group>";
+		};
+		191A3ADD2328849D004ABFF0 /* DeviceManager */ = {
+			isa = PBXGroup;
+			children = (
+				191A3B002328857E004ABFF0 /* DKBleDevInitInfo.h */,
+				191A3AFB2328857E004ABFF0 /* DKBleDevInitInfo.m */,
+				191A3AFC2328857E004ABFF0 /* DKComByteManager.h */,
+				191A3AFD2328857E004ABFF0 /* DKComByteManager.m */,
+				191A3AFF2328857E004ABFF0 /* DKDeviceManager.h */,
+				191A3AFE2328857E004ABFF0 /* DKDeviceManager.m */,
+			);
+			path = DeviceManager;
+			sourceTree = "<group>";
+		};
+		191A3ADE232884AA004ABFF0 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				191A3B08232885B4004ABFF0 /* NSData+Hex.h */,
+				191A3B09232885B4004ABFF0 /* NSData+Hex.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		191A3ADF232884BD004ABFF0 /* Exception */ = {
+			isa = PBXGroup;
+			children = (
+				191A3B0D232885C2004ABFF0 /* DKCardNoResponseException.h */,
+				191A3B0E232885C2004ABFF0 /* DKCardNoResponseException.m */,
+				191A3B0C232885C2004ABFF0 /* DKDeviceNoResponseException.h */,
+				191A3B0B232885C1004ABFF0 /* DKDeviceNoResponseException.m */,
+			);
+			path = Exception;
+			sourceTree = "<group>";
+		};
+		191A3B042328858E004ABFF0 /* BleManager */ = {
+			isa = PBXGroup;
+			children = (
+				191A3B05232885AA004ABFF0 /* DKBleManager.h */,
+				191A3B06232885AA004ABFF0 /* DKBleManager.m */,
+			);
+			path = BleManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		191A3ABD23288406004ABFF0 /* BletoothModel_dk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 191A3AD323288408004ABFF0 /* Build configuration list for PBXNativeTarget "BletoothModel_dk" */;
+			buildPhases = (
+				191A3ABA23288406004ABFF0 /* Sources */,
+				191A3ABB23288406004ABFF0 /* Frameworks */,
+				191A3ABC23288406004ABFF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BletoothModel_dk;
+			productName = BletoothModel_dk;
+			productReference = 191A3ABE23288406004ABFF0 /* BletoothModel_dk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		191A3AB623288406004ABFF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = DennisKao;
+				TargetAttributes = {
+					191A3ABD23288406004ABFF0 = {
+						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
+					};
+				};
+			};
+			buildConfigurationList = 191A3AB923288406004ABFF0 /* Build configuration list for PBXProject "BletoothModel_dk" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 191A3AB523288406004ABFF0;
+			productRefGroup = 191A3ABF23288406004ABFF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				191A3ABD23288406004ABFF0 /* BletoothModel_dk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		191A3ABC23288406004ABFF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				191A3ACF23288408004ABFF0 /* LaunchScreen.storyboard in Resources */,
+				191A3ACC23288408004ABFF0 /* Assets.xcassets in Resources */,
+				191A3AC723288406004ABFF0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		191A3ABA23288406004ABFF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				191A3B0A232885B4004ABFF0 /* NSData+Hex.m in Sources */,
+				191A3ADB2328846E004ABFF0 /* DKBleNfcDevice.m in Sources */,
+				191A3ACA23288406004ABFF0 /* BletoothModel_dk.xcdatamodeld in Sources */,
+				191A3AC423288406004ABFF0 /* BLEMainViewController.swift in Sources */,
+				191A3B07232885AA004ABFF0 /* DKBleManager.m in Sources */,
+				191A3AF2232884D1004ABFF0 /* Mifare.m in Sources */,
+				191A3AC223288406004ABFF0 /* AppDelegate.swift in Sources */,
+				191A3B022328857E004ABFF0 /* DKComByteManager.m in Sources */,
+				191A3B0F232885C2004ABFF0 /* DKDeviceNoResponseException.m in Sources */,
+				191A3B032328857E004ABFF0 /* DKDeviceManager.m in Sources */,
+				191A3AF3232884D1004ABFF0 /* Card.m in Sources */,
+				191A3AF5232884D1004ABFF0 /* CpuCard.m in Sources */,
+				191A3AF9232884D1004ABFF0 /* Ultralight.m in Sources */,
+				191A3B012328857E004ABFF0 /* DKBleDevInitInfo.m in Sources */,
+				191A3B10232885C2004ABFF0 /* DKCardNoResponseException.m in Sources */,
+				191A3AF8232884D1004ABFF0 /* Iso14443bCard.m in Sources */,
+				191A3AF6232884D1004ABFF0 /* Ntag21x.m in Sources */,
+				191A3AFA232884D1004ABFF0 /* DESFire.m in Sources */,
+				191A3AF4232884D1004ABFF0 /* Iso15693Card.m in Sources */,
+				191A3AF7232884D1004ABFF0 /* FeliCa.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		191A3AC523288406004ABFF0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				191A3AC623288406004ABFF0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		191A3ACD23288408004ABFF0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				191A3ACE23288408004ABFF0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		191A3AD123288408004ABFF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		191A3AD223288408004ABFF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		191A3AD423288408004ABFF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4HS2232BLN;
+				INFOPLIST_FILE = BletoothModel_dk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "DennisKao.BletoothModel-dk";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BlleNfcSDK/BletoothModel_dk-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		191A3AD523288408004ABFF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4HS2232BLN;
+				INFOPLIST_FILE = BletoothModel_dk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "DennisKao.BletoothModel-dk";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BlleNfcSDK/BletoothModel_dk-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		191A3AB923288406004ABFF0 /* Build configuration list for PBXProject "BletoothModel_dk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				191A3AD123288408004ABFF0 /* Debug */,
+				191A3AD223288408004ABFF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		191A3AD323288408004ABFF0 /* Build configuration list for PBXNativeTarget "BletoothModel_dk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				191A3AD423288408004ABFF0 /* Debug */,
+				191A3AD523288408004ABFF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		191A3AC823288406004ABFF0 /* BletoothModel_dk.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				191A3AC923288406004ABFF0 /* BletoothModel_dk.xcdatamodel */,
+			);
+			currentVersion = 191A3AC923288406004ABFF0 /* BletoothModel_dk.xcdatamodel */;
+			path = BletoothModel_dk.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 191A3AB623288406004ABFF0 /* Project object */;
+}
